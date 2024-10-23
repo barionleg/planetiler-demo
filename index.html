@@ -173,9 +173,9 @@
         </small>
         <br />
         <small>
-          Tiles hosted by
-          <a href="https://github.com/ZeLonewolf/openstreetmap-americana/">
-            OpenStreetMap Americana
+          Tiles
+          <a href="https://github.com/osmus/tileservice/">
+            hosted by OpenStreetMap US
           </a>
         </small>
       </p>
@@ -188,6 +188,7 @@
         ["waterway", 35, 117, 224],
         ["landcover", 83, 224, 51],
         ["landuse", 229, 180, 4],
+        ["park", 132, 234, 91],
         ["boundary", 197, 69, 211],
         ["aeroway", 81, 174, 181],
         ["transportation", 242, 182, 72],
@@ -195,6 +196,7 @@
         ["building", 43, 43, 43],
         ["housenumber", 40, 40, 40],
         ["place", 242, 14, 147],
+        ["mountain_peak", 98, 237, 247],
         ["poi", 59, 181, 10],
       ];
       var warning = document.getElementById("warning");
@@ -210,7 +212,7 @@
             vector_layer_: {
               type: "vector",
               tiles: [
-                "https://6ug7hetxl9.execute-api.us-east-2.amazonaws.com/data/v3/{z}/{x}/{y}.pbf",
+                "https://dwuxtsziek7cf.cloudfront.net/planet/{z}/{x}/{y}.mvt",
               ],
               minzoom: 0,
               maxzoom: 14,
